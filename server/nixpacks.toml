@@ -1,0 +1,12 @@
+[phases.setup]
+nixPkgs = ["nodejs", "python3", "ffmpeg"]
+
+[phases.install]
+cmds = [
+    "npm install",
+    "pip install -r requirements.txt"
+]
+
+[start]
+# Run both API server and TTS service concurrently
+cmd = "concurrently \"node server.js\" \"python3 tts_service.py\" --names \"API,TTS\""

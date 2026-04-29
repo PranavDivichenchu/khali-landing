@@ -1,0 +1,7 @@
+node_modules
+venv
+.env
+.git
+.DS_Store
+temp/
+public/clips/

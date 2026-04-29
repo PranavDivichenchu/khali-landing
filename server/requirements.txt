@@ -1,0 +1,5 @@
+edge-tts
+flask
+flask-cors
+gunicorn
+yt-dlp

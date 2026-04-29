@@ -1,0 +1,41 @@
+{
+    "name": "video-clip-server",
+    "version": "1.0.0",
+    "description": "Node.js server for generating video clips from YouTube videos",
+    "main": "server.js",
+    "scripts": {
+        "start": "concurrently \"npm run start:api\" \"npm run start:tts\" --names \"API,TTS\"",
+        "start:api": "node server.js",
+        "start:worker": "node worker.js",
+        "start:tts": "venv/bin/python3 tts_service.py",
+        "install:python": "python3 -m venv venv && venv/bin/pip install -r requirements.txt",
+        "clean:posts": "node scripts/delete_all_posts.js",
+        "dev": "nodemon server.js"
+    },
+    "keywords": [
+        "video",
+        "clips",
+        "youtube",
+        "ffmpeg"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@distube/ytdl-core": "latest",
+        "@supabase/supabase-js": "^2.91.1",
+        "axios": "^1.13.4",
+        "better-sqlite3": "^12.6.2",
+        "concurrently": "^9.2.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "fluent-ffmpeg": "^2.1.2",
+        "openai": "^6.16.0",
+        "pg": "^8.17.2",
+        "rss-parser": "^3.13.0",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    }
+}

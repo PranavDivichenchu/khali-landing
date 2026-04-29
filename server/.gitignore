@@ -1,0 +1,10 @@
+node_modules/
+.env
+clips/*.mp4
+clips/*.jpg
+clips/*.json
+downloads/*.mp4
+.DS_Store
+*.log
+
+*-player-script.js
