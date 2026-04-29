@@ -60,7 +60,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${dmSerifDisplay.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="m-0 p-0 overflow-hidden">{children}</body>
     </html>
   );
 }
