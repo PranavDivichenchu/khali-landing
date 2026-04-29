@@ -324,6 +324,12 @@ function Nav() {
                 {item}
               </a>
             ))}
+            <Link
+              href="/feed"
+              className="nav-link font-dm-sans text-sm font-semibold text-[#b8882e] hover:text-[#9a6e1c] transition-colors"
+            >
+              ▶ Live Feed
+            </Link>
           </nav>
 
           {/* CTA */}
@@ -417,6 +423,14 @@ function Hero() {
                 See how it works
                 <IconArrowRight />
               </a>
+              <Link
+                href="/feed"
+                className="appstore-btn inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl font-dm-sans text-sm font-semibold text-white transition-all"
+                style={{ background: "linear-gradient(135deg, #1a120b 0%, #3d2314 100%)", border: "1px solid #5c3d2e" }}
+              >
+                <span>▶</span>
+                Live Feed
+              </Link>
             </div>
 
             {/* Social proof line */}
