@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  --font-display: 'Sora', 'Segoe UI', sans-serif;
+  --font-sans: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: #fbfcff;
+  background:
+    radial-gradient(circle at top right, rgba(255, 138, 61, 0.18), transparent 26%),
+    radial-gradient(circle at bottom left, rgba(47, 125, 255, 0.22), transparent 30%),
+    linear-gradient(180deg, #06111f 0%, #0b1d35 48%, #132a47 100%);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
